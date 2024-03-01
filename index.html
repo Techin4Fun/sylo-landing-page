@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/> -->
     <title>Sylo</title>
-    <link href="./src/output.css" rel="stylesheet">
+    <!-- <link href="./src/output.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <!-- https://www.frontendmentor.io/challenges/Sylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd -->
 
- <body>
+ <body class="scroll-smooth">
   <div class="font-public-sans overflow-hidden bg-stone-50 text-black">
     <!-- Navbar -->
     <nav class="mx-auto mb-10 flex max-w-screen-2xl items-center justify-between px-10 py-5">
       <div>
-        <a href="#" class="flex items-center align-middle">
+        <a href="#" class="hover:animate-pulse flex items-center align-middle">
           <img src="https://www.svgrepo.com/show/525513/shield-star.svg" alt="site logo" class="w-7 md:w-10 xl:w-14" />
           <h1 class="text-xl font-bold md:text-2xl xl:text-4xl">Sylo</h1>
         </a>
       </div>
       <div class="flex items-center gap-3 text-sm font-semibold md:gap-10 md:text-lg xl:text-xl">
-        <a href="#">Features</a>
-        <a href="#">Teams</a>
-        <a href="#" class="rounded-full border-2 border-green-400 bg-amber-50 px-4 py-1 shadow-[3px_3px_black] md:border-4 md:shadow-[4px_4px_black]">Sign In</a>
+        <a href="#" class="transistion duration-300 border-[rgba(0,0,0,0)] border-2 hover:border-b-green-400">Features</a>
+        <a href="#" class="transistion duration-300 border-[rgba(0,0,0,0)] border-2 hover:border-b-green-400">Teams</a>
+        <a href="#" class="transistion ease-in-out duration-150 rounded-full border-2 border-green-400 bg-amber-50 px-4 py-1 shadow-[3px_3px_black] hover:shadow-[1px_1px_black] hover:bg-amber-100 md:border-4 md:shadow-[4px_4px_black]">Sign In</a>
       </div>
     </nav>
   
@@ -35,7 +36,7 @@
       <h2 class="pb-5 text-xl font-bold md:px-52 md:text-3xl xl:text-5xl">All your files in one secure location, accessible anywhere.</h2>
   
       <p class="pb-5 md:px-24 lg:px-64 xl:text-xl">Sylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
-      <button class="rounded-md border-4 border-black bg-green-400 px-16 py-3 text-lg font-bold shadow-[4px_4px] xl:text-2xl">Get Started</button>
+      <button class="transistion ease-in-out duration-150 rounded-md border-4 border-black bg-green-400 hover:bg-green-500 px-16 py-3 text-lg font-bold shadow-[4px_4px] hover:shadow-[2px_2px] xl:text-2xl">Get Started</button>
     </section>
   
     <!-- Features -->
@@ -71,7 +72,7 @@
         <h2 class="py-3 text-lg font-bold md:pr-24 md:text-3xl xl:text-5xl">Stay productive, wherever you are</h2>
         <p class="pb-3 xl:text-lg">Never let location be an issues when you are accessing your files. Sylo has you covered for all of your storage needs.</p>
         <p class="pb-6 xl:text-lg">Securely share files and folders with your friends, family and colleagues for live collaboration. No email attachments required.</p>
-        <a href="#" class="rounded-md border-4 border-green-400 bg-amber-50 px-4 py-2 pb-2 font-bold shadow-[4px_4px_black] xl:text-lg">See how Sylo works ▶</a>
+        <a href="#" class="transistion ease-in-out duration-150 rounded-md border-4 border-green-400 hover:border-green-500 bg-amber-50 hover:bg-amber-100 px-4 py-2 pb-2 font-bold shadow-[4px_4px_black] hover:shadow-[2px_2px_black] xl:text-lg">See how Sylo works ▶</a>
       </div>
     </section>
   
@@ -119,7 +120,7 @@
           <p class="pb-5 text-center text-sm md:px-32 xl:text-lg">It only takes a minute to sign up and our free started tier is extremely gorgeous. If you have any questions, our support team would be happy to help you.</p>
           <form action="#" class="flex flex-col gap-5 md:flex-row">
             <input type="text" placeholder="email@example.com" class="rounded-full border-4 border-black px-6 py-2 text-sm text-black md:w-3/4 md:text-base" />
-            <input type="button" value="Get Started For Free" class="cursor-pointer rounded-lg border-4 border-black bg-green-400 py-3 text-sm font-bold shadow-[4px_4px] md:w-1/4 md:text-base" />
+            <input type="button" value="Get Started For Free" class="transistion ease-in-out duration-150 cursor-pointer rounded-lg border-4 border-black bg-green-400 hover:bg-green-500 py-3 text-sm font-bold shadow-[4px_4px] hover:shadow-[2px_2px_black] md:w-1/4 md:text-base" />
           </form>
         </div>
       </div>
@@ -173,9 +174,9 @@
   
           <!-- Social Links -->
           <div class="flex items-center justify-center gap-2">
-            <a href="#" class="rounded-full border-4 border-sky-500"><img src="https://www.svgrepo.com/show/478984/twitter-2.svg" alt="Twitter icon" class="w-10 p-1" /></a>
-            <a href="#" class="rounded-full border-4 border-blue-500"><img src="https://www.svgrepo.com/show/503338/facebook.svg" alt="Twitter icon" class="w-10" /></a>
-            <a href="#" class="rounded-full border-4 border-purple-500"><img src="https://www.svgrepo.com/show/494277/instagram-round.svg" alt="Twitter icon" class="w-10 p-1" /></a>
+            <a href="#" class="transistion ease-in-out duration-150 rounded-full border-4 border-sky-500 hover:border-sky-600"><img src="https://www.svgrepo.com/show/478984/twitter-2.svg" alt="Twitter icon" class="w-10 p-1" /></a>
+            <a href="#" class="transistion ease-in-out duration-150 rounded-full border-4 border-blue-500 hover:border-blue-600"><img src="https://www.svgrepo.com/show/503338/facebook.svg" alt="Twitter icon" class="w-10" /></a>
+            <a href="#" class="transistion ease-in-out duration-150 rounded-full border-4 border-purple-500 hover:border-purple-600"><img src="https://www.svgrepo.com/show/494277/instagram-round.svg" alt="Twitter icon" class="w-10 p-1" /></a>
           </div>
         </div>
       </div>
