@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
     <title>Sylo</title>
-    <!-- <link href="./src/output.css" rel="stylesheet"> -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/style.css" rel="stylesheet">
 </head>
 <!-- https://www.frontendmentor.io/challenges/Sylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd -->
 
- <body class="scroll-smooth">
+ <body>
   <div class="font-public-sans overflow-hidden bg-stone-50 text-black">
     <!-- Navbar -->
     <nav class="mx-auto mb-10 flex max-w-screen-2xl items-center justify-between px-10 py-5">
@@ -31,7 +30,7 @@
   
     <!-- Hero -->
     <section class="mx-auto max-w-screen-xl px-5 pb-20 text-center">
-      <img src="https://th.bing.com/th/id/OIG4.g6B74u5kNLyCfaFQz3Vi?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="" class="mx-auto w-1/2 rounded-full pb-5" />
+      <img id="hero-img" src="https://th.bing.com/th/id/OIG4.g6B74u5kNLyCfaFQz3Vi?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="" class="mx-auto w-1/2 rounded-full pb-5" />
   
       <h2 class="pb-5 text-xl font-bold md:px-52 md:text-3xl xl:text-5xl">All your files in one secure location, accessible anywhere.</h2>
   
@@ -182,6 +181,6 @@
       </div>
     </footer>
   </div>
-  
+  <script type="module" src="./main.js"></script>
 </body> 
 </html>
